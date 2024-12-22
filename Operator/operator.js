@@ -26,3 +26,25 @@ let numbig = 999999999999999999n;
 let numbig2 = 99999999999999999999n;
 console.log(numbig * numbig2);
 
+//this is called array
+let fruts = ['Apple', 'Lemon', 'Peer', 'Orange', 32, true, undefined, null];
+console.log(fruts);
+fruts[4] = 'Mango';
+console.log(typeof fruts);
+
+
+//when we needed key value like map, that's time we need object
+
+let student = {
+    Name: 'Tamimkhan',
+    Age: 25,
+    Dateofbirth: 1998,
+    bloodgroup: 'A(positive)',
+    ID: 1024,
+    Batch: '59th',
+    department: 'CSE',
+};
+console.log(student);
+
+
+
