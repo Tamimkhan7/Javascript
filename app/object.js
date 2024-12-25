@@ -17,6 +17,9 @@ const mobilemodel = {
     bandmodel: function () {
         return `Mobile brand is ${this.brand} and model is ${this.model}`;
     },
+    battery: {
+        mah: 5000, //we are store here battery capacity
+    },
 };
 mobilemodel.model = 's25 ultra';
 // jodi ami freeze kora rakhte cai amar object ar kono change na korte cai tahole
@@ -68,6 +71,29 @@ const finalobj = {
 console.log(finalobj);
 
 // multiple object jodi ak line a print korte cai  
+// this is not efficient, because, first of all are store on the obj1 then obj1 return all value on the console
+// const objfinal = Object.assign(obj1, obj2, obj3);
 
-const objfinal = Object.assign(obj1, obj2, obj3);
+// this time we do now work 
+// const objfinal = Object.assign({}, obj1, obj2, obj3);
+
+//  efficient way to store the value on the finalobj, it is best from above all structure
+const objfinal = { ...obj1, ...obj2, ...obj3 };
 console.log(objfinal);
+
+//how to print object between object value
+console.log(mobilemodel.battery.mah);
+
+
+
+// constructor function
+// constructor function, function ar name first char is must be capital letter
+function Person(first, last) {
+    this.firstname = first, this.lastname = last;
+}
+// both are correct we through a value into the paranthesis or parameter
+// const person2 = new Person();
+// console.log(person2);
+const person1 = new Person('Tamim', 'khan');
+person1.age = 20;//added an element on the Person1 object
+console.log(person1);

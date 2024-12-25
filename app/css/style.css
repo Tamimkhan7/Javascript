@@ -1,4 +1,4 @@
-#btw {
+button {
     background: red;
     color: white;
     padding: 20px 45px;
@@ -8,4 +8,20 @@
     font-size: 18px;
     font: bold;
     font-family: sans-serif;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    background: blue;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    text-align: left;
+    font-weight: 100;
+    font-family: sans-serif;
+    padding-left: 15px;
+    padding-top: 20px;
 }
