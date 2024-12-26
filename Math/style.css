@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+button {
+    background: red;
+    padding: 8px 40px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 18px;
+    font: bold;
+    font-family: sans-serif;
+    transition-duration: 0.5s;
+    border-radius: 15px;
+}
+
+button:hover {
+    background: #262626;
+}
