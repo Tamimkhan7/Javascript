@@ -1,4 +1,9 @@
-button {
+body {
+    text-align: center;
+}
+
+button,
+#form input[type='submit'] {
     background: red;
     color: white;
     padding: 20px 45px;
@@ -9,19 +14,53 @@ button {
     font: bold;
     font-family: sans-serif;
     transition-duration: 0.5s;
+    border-radius: 15px;
+
 }
 
-button:hover {
-    background: blue;
+button:hover,
+#form input[type='submit']:hover {
+    background: #262626;
 }
 
 h1 {
-    font-size: 30px;
-    font-weight: bold;
-    color: red;
-    text-align: left;
-    font-weight: 100;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200px;
     font-family: sans-serif;
     padding-left: 15px;
     padding-top: 20px;
+}
+
+#form {
+    width: 90%;
+    padding: 3%;
+}
+
+#form label {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: 800px;
+
+}
+
+#form input,
+#form textarea {
+    margin-top: 10px;
+    width: 90%;
+    padding: 10px 3%;
+    font-family: sans-serif;
+    font-weight: 200px;
+}
+
+#form input[type='submit'] {
+    padding: 8px 3%;
+    width: 90%;
+}
+
+#ul {
+    text-align: left;
 }
