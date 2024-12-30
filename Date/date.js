@@ -30,4 +30,30 @@ console.log(datecustom);
 
 //find day and date
 // console.log(myDate.getDate());
-console.log(myDate.getDate());
+// console.log(myDate.getDate());
+
+
+/*
+call stack
+premitive data type
+strign , number, boolean, undefined, null, symbol, bigint
+
+Heap
+non premitive data type
+object, array
+*/
+
+// swich case
+let category = 'motor bike';
+let cartype;
+switch (category) {
+    case 'car':
+        cartype = 'This is a car';
+        break;
+    case 'motor bike':
+        cartype = 'This is a motor bike';
+        break;
+    default:
+        cartype = 'Unknown vchicle category';
+}
+console.log(cartype);
