@@ -57,3 +57,17 @@ const person = {
 person.country = "bangladesh";
 person.age = 50;
 console.log(person);
+
+//javascript hosting
+tamim = 'amar name tamim khan';
+console.log(tamim);
+var tamim;
+
+//but let and const is not hosnting varibale 
+
+
+//normallily 
+car('R15');
+function car(bike) {
+    console.log(`i love to have a ${bike}.`);
+}
