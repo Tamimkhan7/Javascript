@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+
+
+h1{
+color: brown;
+}
+p{
+    color: chocolate;
+}
+
+#box{
+    color: white;
+}
+
+.box-color{
+    color: blue;
+}
