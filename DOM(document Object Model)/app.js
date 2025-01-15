@@ -53,4 +53,7 @@ convertclass.forEach(function (value) {
 
 
 //how to check class box or class id
-document.querySelector('.classbox').id;
+document.querySelector('.classbox').class;
+
+//how to check if any attibuted are there
+document.querySelector('.box').getAttribute('id');
