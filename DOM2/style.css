@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_box{
+    display: flex;
+}
+.box{
+    width: 200px;
+    background: #b9d6f2;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+.hero h1{
+    text-align: center;
+}
+.hero{
+    background-color: aquamarine;
+    padding:40px 20px;
+    
+
+}

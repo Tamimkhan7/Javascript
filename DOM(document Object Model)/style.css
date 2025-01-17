@@ -17,3 +17,24 @@ p{
 .box-color{
     color: blue;
 }
+
+.text-white{  
+    color: white;
+}
+.cta{
+    text-align: center;
+    background-color: red;
+    padding: 15px 20px;
+    width: 200px;  
+}
+.cta p{
+    color: white;
+    font-size: 25px;
+
+}
+.cta :hover{
+    color: blue;
+    background-color: white;
+    text-decoration: underline;
+
+}

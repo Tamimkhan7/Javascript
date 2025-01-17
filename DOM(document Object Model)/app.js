@@ -53,7 +53,12 @@ convertclass.forEach(function (value) {
 
 
 //how to check class box or class id
-document.querySelector('.classbox').class;
+// document.querySelector('.classbox').class;
 
 //how to check if any attibuted are there
-document.querySelector('.box').getAttribute('id');
+document.querySelector('#box').getAttribute('id');
+document.querySelector(`.classbox`).setAttribute('class', 'text-white')
+//css a jeita likhbo oita hobe id mention korle id asbe class mention korle class asbe, arh class ba id name likhte hobe
+document.querySelector('#box').setAttribute('class', 'text-white');
+//aita override hocce tai aita cole jacce abar jodi class use kori tahole oita theke jabe
+document.querySelector('.cta').setAttribute('class', 'text-white cta');
