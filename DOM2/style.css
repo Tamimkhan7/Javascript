@@ -1,29 +1,43 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.main_box{
-    display: flex;
+.main_box {
+  display: flex;
 }
-.box{
-    width: 200px;
-    background: #b9d6f2;
-    border-radius: 10px;
-    text-align: center;
-    padding: 25px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    margin-right: 10px;
-    font-size: 20px;
-    flex-wrap: wrap;
+/* javascript theke oh tag dore design kora jay */
+button {
+  background: red;
+  color: white;
+  font-size: 17px;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px 30px;
+  margin: 8px 2px;
 }
-.hero h1{
-    text-align: center;
+.box {
+  width: 200px;
+  background: #b9d6f2;
+  border-radius: 10px;
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  flex-wrap: wrap;
 }
-.hero{
-    background-color: aquamarine;
-    padding:40px 20px;
-    
-
+.hero h1 {
+  text-align: center;
+}
+.hero {
+  background-color: aquamarine;
+  padding: 40px 20px;
+}
+ul {
+  margin-top: 20px;
+  margin-left: 25px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
