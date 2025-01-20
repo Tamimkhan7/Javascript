@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+#menu ul {
+  text-align: center;
+  margin-top: 25px;
+}
+#menu li {
+  display: inline-block; /*aita mane holo amar box gula pasapasi asbe*/
+  border: 2px solid #ddd;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ddd;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#menu li.red {
+  background: #e74c3c;
+}
+
+#menu li.green {
+  background: #27ae60;
+}
+
+#menu li.blue {
+  background: #3498db;
+}
+
+#menu li.pink {
+  background: #1abc9c;
+}
+
+#menu li.purple {
+  background: #9b59b6;
+}
