@@ -38,6 +38,17 @@ h6 {
   font-weight: 900;
 }
 
+#main h2 {
+  background: #ddd;
+  color: #262626;
+  display: inline-block;
+  font-size: 50px;
+  margin-bottom: 8px;
+  font-weight: 900;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
 #main form {
   margin: 15px 0;
 }
@@ -81,4 +92,18 @@ h6 {
 }
 #main button:hover {
   background: #ddd;
+}
+
+.result,
+.info {
+  background: #fff;
+  padding: 20px 15px;
+  border-radius: 5px;
+}
+.info {
+  margin-top: 20px;
+}
+
+.result {
+  display: none;
 }
