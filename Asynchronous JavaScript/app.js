@@ -93,18 +93,18 @@ Hello3 last a giye aita print korbe because this is asyncnronous function*/
 
 //multiple promise we can use our js console at a time, now we can seee
 
-const step1 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        //i'm return resolve function for the print out after 2s
-        resolve("Step one is done");
-    }, 2000);
-});
+// const step1 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         //i'm return resolve function for the print out after 2s
+//         resolve("Step one is done");
+//     }, 2000);
+// });
 
-const step2 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve("Step two is done");
-    }, 3000);
-});
+// const step2 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("Step two is done");
+//     }, 3000);
+// });
 
 // step1.then(function (resolve) {
 //     console.log(resolve);
@@ -117,4 +117,35 @@ const step2 = new Promise((resolve, reject) => {
 //promise function ke kivabe array moto output ber kora jay ta dekhbo
 // Promise.all([step1, step2]).then(res => console.log(res));
 //race mane holo jeita time kom deoya ace oita age kaj hobe then bakita kaj hobe,,, race kore jeita first hobe oita asbe just sudu
-Promise.race([step1, step2]).then(res => console.log(res));
+// Promise.race([step1, step2]).then(res => console.log(res));
+
+//ami promise ar modde one by one kaj korate pari function ke 
+
+// let promise1 = new Promise((resolve, reject) => {
+//     return resolve('Step one done');
+// });
+
+// let promise2 = promise1.then(function (data) {
+//     console.log(data);
+//     return new Promise(function (resolve, reject) {
+//         return resolve('step two is done');
+//     });
+// })
+
+// promise2.then(function (data) {
+//     console.log(data);
+// });
+
+
+//fetch part we will learn currently
+
+function randomuser() {
+    fetch(`https://randomuser.me/api/`).then(function (raw) {
+        return raw.json;//converting data into the json
+    }).then(function (data) {
+        console.log(data);
+    }).catch(function () {
+        console.log("No data found");
+    });
+}
+randomuser();
