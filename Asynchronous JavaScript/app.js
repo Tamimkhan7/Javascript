@@ -1,8 +1,8 @@
 //introduction to async javascript
 
-const { reject } = require("any-promise");
-const { contains } = require("micromatch");
-const { resolve } = require("path");
+// const { reject } = require("any-promise");
+// const { contains } = require("micromatch");
+// const { resolve } = require("path");
 
 /*
 ?  synchoronous  //sequences maintain kore
@@ -139,13 +139,41 @@ Hello3 last a giye aita print korbe because this is asyncnronous function*/
 
 //fetch part we will learn currently
 
-function randomuser() {
-    fetch(`https://randomuser.me/api/`).then(function (raw) {
-        return raw.json;//converting data into the json
-    }).then(function (data) {
-        console.log(data);
-    }).catch(function () {
-        console.log("No data found");
-    });
+// function randomuser() {
+//     fetch(`https://randomuser.me/api/`).then(function (raw) {
+//         return raw.json();//converting data into the json
+//     }).then(function (data) {
+//         console.log(data);
+//     }).catch(function () {
+//         //if we find any wrong vardict
+//         console.log("No data found");
+//     });
+// }
+// randomuser();
+
+
+
+//jodi amra just async likhi funciton ar age tahole aii pura function ta promise akare thake, oi vabe structure kora hoye jay
+//two ta function ai same kaj kore just amar structure change hocce,, karon two ta function ai hello return kortece promise akare
+async function myfunction() {
+    return 'Hello';
+}
+// console.log(myfunction());
+
+function myfunction() {
+    return Promise.resolve('Hello');
+}
+// console.log(myfunction());
+
+// if we write just async they converted asynchronous javascript, is too small and fast
+
+async function randomuser() {
+    let urlAPI = await fetch(`https://randomuser.me/api/`);
+    let rawdata = await urlAPI.json(); //jddi ami await use na kori tahole basically directly data ta provide kore se wait ar kore na, ja pai tai console a diye dey
+   // console.log(rawdata);
+
+    console.log(`${rawdata.results[0].name.title} ${rawdata.results[0].name.first} ${rawdata.results[0].name.last}`)
+    console.log(`${rawdata.results[0].gender}`);
+    console.log(`${rawdata.results[0].location.country}`);
 }
 randomuser();
